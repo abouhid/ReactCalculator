@@ -3,14 +3,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Display(props) {
-  const { name } = props;
-  Display.propTypes = {
-    name: PropTypes.string.isRequired,
+  const { result } = props;
+  Display.defaultProps = {
+    result: '0',
   };
+  Display.propTypes = {
+    result: PropTypes.string,
+  };
+
   return (
-    <button type="button">
-      {name}
-    </button>
+    <div className="display">
+      {result}
+    </div>
   );
 }
 
