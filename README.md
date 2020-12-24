@@ -1,6 +1,9 @@
 # React Calculator
-This is a calculator app build with React
-
+This is a calculator app build with React. With the app, you will be able to:
+- Add
+- Subtract
+- Multiply
+- Divide
 
 ## Built With
 
