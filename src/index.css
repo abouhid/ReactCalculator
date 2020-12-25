@@ -37,24 +37,24 @@ code {
 .group3 button:last-child,
 .group4 button:last-child,
 .group5 button:last-child {
-  background-color: #F97F11;
+  background-color: #f97f11;
   color: white;
 }
 
 button {
   width: calc(18px + 10vw);
   height: calc(10px + 13vh);
-  font-size:calc(12px + 1.5vw);
-  background-color: #D0D1D5;
+  font-size: calc(12px + 1.5vw);
+  background-color: #d0d1d5;
   border: 0.5px solid black;
 }
 
-.group1 button{
- background-color: #C0C1C5;
+.group1 button {
+  background-color: #c0c1c5;
 }
 
 .group5 button:first-child {
-  width:  calc(36px + 20vw);
+  width: calc(36px + 20vw);
 }
 
 .display {
@@ -64,5 +64,5 @@ button {
   background-color: #202020;
   color: white;
   text-align: right;
-  padding: 0 1vw 0.7vw 0
+  padding: 0 1vw 0.7vw 0;
 }
