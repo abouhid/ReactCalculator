@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-image: url(https://i.pinimg.com/originals/4c/44/71/4c447188245c48db44f85b2ebb631804.jpg);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -24,4 +25,44 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.group1 button:last-child,
+.group2 button:last-child,
+.group3 button:last-child,
+.group4 button:last-child,
+.group5 button:last-child {
+  background-color: #F97F11;
+  color: white;
+}
+
+button {
+  width: calc(18px + 10vw);
+  height: calc(10px + 13vh);
+  font-size:calc(12px + 1.5vw);
+  background-color: #D0D1D5;
+  border: 0.5px solid black;
+}
+
+.group1 button{
+ background-color: #C0C1C5;
+}
+
+.group5 button:first-child {
+  width:  calc(36px + 20vw);
+}
+
+.display {
+  width: calc(72px + 39vw);
+  height: calc(10px + 10vh);
+  font-size: calc(10px + 10vh);
+  background-color: #202020;
+  color: white;
+  text-align: right;
+  padding: 0 1vw 0.7vw 0
 }
