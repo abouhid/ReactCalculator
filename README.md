@@ -18,7 +18,7 @@ This is a calculator app build with React. With the app, you will be able to:
 
 ## Live Demo
 
-[Live Demo Link](https://reactcalculatoralex.herokuapp.com/)
+[Live Demo Link](https://calculalex.netlify.app/)
 
 
 ## Getting Started
