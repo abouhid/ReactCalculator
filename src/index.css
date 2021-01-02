@@ -32,31 +32,6 @@ code {
   justify-content: center;
 }
 
-.group1 button:last-child,
-.group2 button:last-child,
-.group3 button:last-child,
-.group4 button:last-child,
-.group5 button:last-child {
-  background-color: #f97f11;
-  color: white;
-}
-
-button {
-  width: calc(18px + 10vw);
-  height: calc(10px + 13vh);
-  font-size: calc(12px + 1.5vw);
-  background-color: #d0d1d5;
-  border: 0.5px solid black;
-}
-
-.group1 button {
-  background-color: #c0c1c5;
-}
-
-.group5 button:first-child {
-  width: calc(36px + 20vw);
-}
-
 .display {
   width: calc(72px + 39vw);
   height: calc(10px + 10vh);
@@ -74,4 +49,38 @@ h1 {
 
 .App {
   text-align: center;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.panel-button > * {
+  background-color: white;
+  width: calc(18px + 10vw);
+  height: calc(10px + 13vh);
+  font-size: calc(12px + 1.5vw);
+  border: 0.5px solid black;
+}
+
+.panel .panel-button:nth-child(4n) > *,
+.panel .panel-button:nth-child(19) > * {
+  background-color: #f97f11;
+  color: white;
+  width: calc(18px + 10vw);
+  height: calc(10px + 13vh);
+  font-size: calc(12px + 1.5vw);
+  border: 0.5px solid black;
+}
+
+.panel .panel-button:nth-child(17) {
+  grid-column: span 2;
+}
+
+.panel .panel-button:nth-child(17) > * {
+  width: calc(36px + 20vw);
 }

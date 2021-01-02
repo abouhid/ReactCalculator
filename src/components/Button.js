@@ -1,19 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = props => {
-  const {
-    value,
-    onClick,
-  } = props;
-  const handleClick = (value => onClick(value));
-
-  return (
-    <button type="button" onClick={() => handleClick(value)}>
-      {value}
-    </button>
-  );
-};
+const Button = ({ value, onClick }) => (
+  <button type="button" onClick={() => onClick(value)}>
+    {value}
+  </button>
+);
 
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,

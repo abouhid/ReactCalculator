@@ -27,7 +27,7 @@ const Operate = (numberOne, numberTwo, operation) => {
     default:
       break;
   }
-  return result.toFixed(1).toString();
+  return result.toFixed(2).toString();
 };
 
 export default Operate;
