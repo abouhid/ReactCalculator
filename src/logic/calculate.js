@@ -13,7 +13,7 @@ const Calculate = ((object, btnName) => {
       next *= -1;
       break;
     case '%':
-      total /= 100;
+      total = Operate(total, 100, '÷');
       break;
     case operator.includes(btnName):
       if (operation && next) {
