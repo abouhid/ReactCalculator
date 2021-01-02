@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Display(props) {
+const Display = props => {
   const { amount } = props;
   return (
     <div className="display">
       {amount}
     </div>
   );
-}
+};
 
 Display.defaultProps = {
   amount: '0',
