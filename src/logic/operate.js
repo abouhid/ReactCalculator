@@ -27,5 +27,5 @@ export default function Operate(numberOne, numberTwo, operation) {
     default:
       break;
   }
-  return result.toFixed(3).toString();
+  return result.toFixed(1).toString();
 }
