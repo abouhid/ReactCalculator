@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = props => {
-  const { value, name } = props;
+  const { value } = props;
   return (
     <button
       type="button"
-      className={name}
     >
       { value }
     </button>
@@ -15,6 +14,5 @@ const Button = props => {
 
 Button.propTypes = {
   value: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
 };
 export default Button;
