@@ -2,20 +2,20 @@ import Big from 'big.js';
 
 export default function Operate(numberOne, numberTwo, operation) {
   const num1 = Big(numberOne);
-  const dnum2 = Big(numberTwo);
+  const num2 = Big(numberTwo);
   let result;
   switch (operation) {
     case '*':
-      result = num1.times(dnum2);
+      result = num1.times(num2);
       break;
     case '÷':
-      result = num1.div(dnum2);
+      result = num1.div(num2);
       break;
     case '+':
-      result = num1.plus(dnum2);
+      result = num1.plus(num2);
       break;
     case '-':
-      result = num1.minus(dnum2);
+      result = num1.minus(num2);
       break;
     default:
       break;
