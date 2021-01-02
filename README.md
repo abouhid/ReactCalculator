@@ -5,6 +5,9 @@ This is a calculator app build with React. With the app, you will be able to:
 - Multiply
 - Divide
 
+![screenshot](./src/images/screenshot.png)
+
+
 ## Built With
 
 - Javascript
