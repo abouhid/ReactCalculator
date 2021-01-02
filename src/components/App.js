@@ -3,18 +3,33 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import Calculate from '../logic/calculate';
 
-const App = () => {
-  // eslint-disable-next-line no-console
-  console.log(Calculate);
-  return (
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-    <div className="App">
-      <h1>React Calculator</h1>
-      <Display />
-      <ButtonPanel />
+  handleClick(btnName) {
+    const newState = Calculate(this.state, btnName);
+    this.setState(newState);
+  }
 
-    </div>
-  );
-};
+  render() {
+    const { total, next } = this.state;
+
+    return (
+      <div className="App">
+        <h1>React Calculator</h1>
+        <Display amount={next || total || '0'} />
+        <ButtonPanel onClick={this.handleClick} />
+      </div>
+    );
+  }
+}
 
 export default App;
