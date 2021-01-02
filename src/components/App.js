@@ -23,7 +23,8 @@ class App extends React.Component {
     const { total, next } = this.state;
 
     return (
-      <div>
+      <div className="App">
+        <h1>React Calculator</h1>
         <Display amount={next || total || '0'} />
         <ButtonPanel onClick={this.handleClick} />
       </div>
