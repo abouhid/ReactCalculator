@@ -53,13 +53,13 @@ h1 {
 
 .panel {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-column-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0;
   margin: 0;
   padding: 0;
 }
 
-.panel-button >*{
+.panel-button > * {
   background-color: white;
   width: calc(18px + 10vw);
   height: calc(10px + 13vh);
@@ -67,8 +67,8 @@ h1 {
   border: 0.5px solid black;
 }
 
-.panel .panel-button:nth-child(4n) >*,
-.panel .panel-button:nth-child(19) >*{
+.panel .panel-button:nth-child(4n) > *,
+.panel .panel-button:nth-child(19) > * {
   background-color: #f97f11;
   color: white;
   width: calc(18px + 10vw);
@@ -76,9 +76,11 @@ h1 {
   font-size: calc(12px + 1.5vw);
   border: 0.5px solid black;
 }
-.panel .panel-button:nth-child(17){
+
+.panel .panel-button:nth-child(17) {
   grid-column: span 2;
 }
-.panel .panel-button:nth-child(17)>*{
+
+.panel .panel-button:nth-child(17) > * {
   width: calc(36px + 20vw);
 }
