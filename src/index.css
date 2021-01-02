@@ -66,3 +66,8 @@ button {
   text-align: right;
   padding: 0 1vw 0.7vw 0;
 }
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px black;
+}

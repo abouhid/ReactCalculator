@@ -9,6 +9,7 @@ const App = () => {
   return (
 
     <div className="App">
+      <h1>React Calculator</h1>
       <Display />
       <ButtonPanel />
 
