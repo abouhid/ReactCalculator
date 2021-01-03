@@ -30,6 +30,8 @@ code {
 #root {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .display {
@@ -43,12 +45,23 @@ code {
 }
 
 h1 {
-  color: white;
+  background-color: blanchedalmond;
+  opacity: 0.9;
   text-shadow: 1px 1px black;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  width: max-content;
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .App {
-  text-align: center;
+  align-self: center;
 }
 
 .panel {
@@ -83,4 +96,37 @@ h1 {
 
 .panel .panel-button:nth-child(17) > * {
   width: calc(36px + 20vw);
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 20%;
+}
+
+.disp {
+  flex-direction: column;
+  padding: 2%;
+}
+
+.quote-container {
+  display: flex;
+  background-color: blanchedalmond;
+  opacity: 0.9;
+  text-shadow: 1px 1px black;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 80%;
+  margin-left: 9%;
+  margin-top: 2%;
+}
+
+.side-text {
+  padding: 5%;
+  max-width: 70%;
 }

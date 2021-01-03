@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
+import Display from '../components/Display';
+import ButtonPanel from '../components/ButtonPanel';
 import Calculate from '../logic/calculate';
 
 const App = () => {
@@ -17,8 +17,8 @@ const App = () => {
   };
 
   return (
+
     <div className="App">
-      <h1>React Calculator</h1>
       <Display amount={obj.next || obj.total || '0'} />
       <ButtonPanel onClick={handleClick} />
     </div>
