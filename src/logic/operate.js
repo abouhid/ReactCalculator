@@ -27,7 +27,6 @@ const Operate = (numberOne, numberTwo, operation) => {
     default:
       break;
   }
-  return result.toFixed(2).toString();
+  return (Math.round(result * 1000) / 1000).toString();
 };
-
 export default Operate;
