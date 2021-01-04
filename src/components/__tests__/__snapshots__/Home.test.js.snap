@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Tests the rendering of components 1`] = `
+<div
+  className="quote-container disp"
+>
+  <h2>
+    Welcome to my Calculator App! 
+  </h2>
+  <h3>
+    Get yourself cozy, bring a hot cup of tea and enjoy calculating whatever you want.
+  </h3>
+  <h4>
+    Planning the expanses of your next trip? We got your back!
+    <br />
+    <br />
+    You want to check if little Timmy is spending too much on in-game skins? We are here for ya!
+    <br />
+    <br />
+    You bet on the wrong horse and needs to move to Bolivia? You're on your own!
+  </h4>
+  <h3>
+    We hope you enjoy your stay!
+  </h3>
+</div>
+`;
+
+exports[`Home component renders correctly 1`] = `
+<div
+  className="quote-container disp"
+>
+  <h2>
+    Welcome to my Calculator App! 
+  </h2>
+  <h3>
+    Get yourself cozy, bring a hot cup of tea and enjoy calculating whatever you want.
+  </h3>
+  <h4>
+    Planning the expanses of your next trip? We got your back!
+    <br />
+    <br />
+    You want to check if little Timmy is spending too much on in-game skins? We are here for ya!
+    <br />
+    <br />
+    You bet on the wrong horse and needs to move to Bolivia? You're on your own!
+  </h4>
+  <h3>
+    We hope you enjoy your stay!
+  </h3>
+</div>
+`;
