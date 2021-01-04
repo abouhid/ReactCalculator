@@ -1,6 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import Home from '../../pages/Home';
+import renderer from 'react-test-renderer';
 
 describe('Home', () => {
   it('Tests the rendering of components', () => {

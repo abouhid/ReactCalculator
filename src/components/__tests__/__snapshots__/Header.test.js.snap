@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Tests the rendering of components 1`] = `
+<nav>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <h1>
+      Home
+    </h1>
+  </a>
+  <a
+    href="/calculator"
+    onClick={[Function]}
+  >
+    <h1>
+      React Calculator
+    </h1>
+  </a>
+  <a
+    href="/quotes"
+    onClick={[Function]}
+  >
+    <h1>
+      Quotes
+    </h1>
+  </a>
+</nav>
+`;
+
+exports[`Test suits for MyComponentWithLink should match with snapshot 1`] = `
+<nav>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <h1>
+      Home
+    </h1>
+  </a>
+  <a
+    href="/calculator"
+    onClick={[Function]}
+  >
+    <h1>
+      React Calculator
+    </h1>
+  </a>
+  <a
+    href="/quotes"
+    onClick={[Function]}
+  >
+    <h1>
+      Quotes
+    </h1>
+  </a>
+</nav>
+`;

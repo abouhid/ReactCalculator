@@ -1,6 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import QuotesPage from '../../pages/QuotesPage';
+import renderer from 'react-test-renderer';
 
 describe('QuotesPage', () => {
   it('Tests the rendering of components', () => {

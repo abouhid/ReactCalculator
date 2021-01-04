@@ -1,6 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import App from '../../pages/App';
+import renderer from 'react-test-renderer';
 
 describe('App', () => {
   it('Tests the rendering of components', () => {
