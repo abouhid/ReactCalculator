@@ -2,9 +2,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import PropTypes from 'prop-types';
-import { act } from 'react-dom/test-utils';
 import renderer from 'react-test-renderer';
-import { screen } from '@testing-library/dom';
 import Button from '../Button';
 
 let container = null;
