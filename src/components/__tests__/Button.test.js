@@ -1,20 +1,20 @@
 /* eslint-disable react/forbid-foreign-prop-types */
 import React from 'react';
-import { render,cleanup } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import PropTypes from 'prop-types';
+import { act } from 'react-dom/test-utils';
+import renderer from 'react-test-renderer';
+import { screen } from '@testing-library/dom';
 import Button from '../Button';
-import { act } from "react-dom/test-utils";
-import renderer from 'react-test-renderer'
-import { screen } from '@testing-library/dom'
 
 let container = null;
 
 beforeEach(() => {
-  container = document.createElement("button");
+  container = document.createElement('button');
   document.body.appendChild(container);
 });
 
-afterEach(cleanup)
+afterEach(cleanup);
 
 test('Should render one button', () => {
   const { container } = render(<Button key={5} onClick={() => {}} value="5" />);
@@ -25,7 +25,7 @@ it("Should render a button of type 'button'", () => {
   const tree = renderer
     .create(<Button key={5} onClick={() => {}} value="5" />)
     .toJSON();
-  expect(tree.type).toBe("button")
+  expect(tree.type).toBe('button');
 });
 
 test('Button value should be 5', () => {
