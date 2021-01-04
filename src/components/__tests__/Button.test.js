@@ -1,9 +1,9 @@
 /* eslint-disable react/forbid-foreign-prop-types */
 import React from 'react';
-import Button from '../Button';
 import { render, cleanup } from '@testing-library/react';
 import PropTypes from 'prop-types';
 import renderer from 'react-test-renderer';
+import Button from '../Button';
 
 let container = null;
 

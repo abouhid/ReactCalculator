@@ -1,8 +1,8 @@
 /* eslint-disable react/forbid-foreign-prop-types */
 import React from 'react';
-import Display from '../Display';
 import { render } from '@testing-library/react';
 import PropTypes from 'prop-types';
+import Display from '../Display';
 
 test('Should render default value', () => {
   const { getByText } = render(<Display amount={undefined} />);

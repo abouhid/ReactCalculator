@@ -1,6 +1,6 @@
 import React from 'react';
-import ButtonPanel from '../ButtonPanel';
 import { render, cleanup } from '@testing-library/react';
+import ButtonPanel from '../ButtonPanel';
 
 let container = null;
 
