@@ -1,27 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshot renders correctly 1`] = `
-<a
-  className="normal"
-  href="http://www.instagram.com"
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
+exports[`Should render a button 1`] = `
+<button
+  onClick={[Function]}
+  type="button"
 >
-  Instagram
-</a>
+  5
+</button>
 `;
 
-exports[`Snapshot will check the values and pass 1`] = `
-Object {
-  "createdAt": Any<Date>,
-  "name": "Bond... James Bond",
-}
-`;
-
-exports[`Snapshot will fail every time 1`] = `
-Object {
-  "createdAt": 2021-01-03T21:42:13.856Z,
-  "id": 4,
-  "name": "LeBron James",
-}
+exports[`renders correctly 1`] = `
+<button
+  onClick={[Function]}
+  type="button"
+>
+  5
+</button>
 `;

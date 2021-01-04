@@ -1,57 +1,40 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import Link from "../Link.react";
+/* eslint-disable react/forbid-foreign-prop-types */
+import React from 'react';
+import { render,cleanup } from '@testing-library/react';
+import PropTypes from 'prop-types';
+import Button from '../Button';
+import { act } from "react-dom/test-utils";
+import renderer from 'react-test-renderer'
+import { screen } from '@testing-library/dom'
 
-describe("Timeline", () => {
-  it("passing test", () => {
-    expect(true).toBeTruthy();
-  });
+let container = null;
 
-  it("failing test", () => {
-    expect(false).toBeFalsy();
-  });
+beforeEach(() => {
+  container = document.createElement("button");
+  document.body.appendChild(container);
 });
-describe("Snapshot", () => {
-  it("renders correctly", () => {
-    const tree = renderer
-      .create(<Link page="http://www.instagram.com">Instagram</Link>)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-  it("renders correctly", () => {
-    const tree = renderer
-      .create(<Link page="https://prettier.io">Prettier</Link>)
-      .toJSON();
-    expect(tree).toMatchInlineSnapshot(`
-      <a
-        className="normal"
-        href="https://prettier.io"
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-      >
-        Prettier
-      </a>
-    `);
-  });
-  // it('will fail every time', () => {
-  //   const user = {
-  //     createdAt: new Date(),
-  //     id: Math.floor(Math.random() * 20),
-  //     name: 'LeBron James',
-  //   };
-  
-  //   expect(user).toMatchSnapshot();
-  // });
 
-  it('will check the values and pass', () => {
-    const user = {
-      createdAt: new Date(),
-      name: 'Bond... James Bond',
-    };
-  
-    expect(user).toMatchSnapshot({
-      createdAt: expect.any(Date),
-      name: 'Bond... James Bond',
-    });
-  });
+afterEach(cleanup)
+
+test('Should render one button', () => {
+  const { container } = render(<Button key={5} onClick={() => {}} value="5" />);
+  const buttons = container.getElementsByTagName('button');
+  expect(buttons.length).toBe(1);
+});
+it("Should render a button of type 'button'", () => {
+  const tree = renderer
+    .create(<Button key={5} onClick={() => {}} value="5" />)
+    .toJSON();
+  expect(tree.type).toBe("button")
+});
+
+test('Button value should be 5', () => {
+  const { container } = render(<Button key={5} onClick={() => {}} value="5" />);
+  const buttons = container.getElementsByTagName('button');
+  expect(buttons[0].textContent).toBe('5');
+});
+
+test('Prop types should be required', () => {
+  expect(Button.propTypes.value).toBe(PropTypes.string.isRequired);
+  expect(Button.propTypes.onClick).toBe(PropTypes.func.isRequired);
 });
